@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+html, body {
+    background: var(--bg-prim);
+    font-family: var(--font-stack);
+    font-size: 20px;
+}
+
+img {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid var(--font-clr-med);
+}
+
+:root {
+    --bg-prim: #e9eaf1;
+    --bg-med: #e4e2e2;
+
+    --font-clr-lite: #fff;
+    --font-clr-dark: #000;
+    --font-clr-med: #555;
+
+    --font-stack: 'Roboto Condensed', sans-serif;
+}
+
+.photo {
+    display: inline-block;
+    width: 100%;
+    height: 50vh;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.inner-container {
+    padding: .1em;
+}
+
+.child-container {
+    margin-bottom: 1em;
+}
+
+.intro-wrapper {
+    background: url(/images/red-white-mountains.jpg) no-repeat center / cover, radial-gradient(#444, #ddd);
+    background-blend-mode: multiply;
+}
+
+.title {
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: .5em 0 .5em 0;
+    color: var(--font-clr-lite);
+}
+
+.description {
+    font-size: 1.125rem;
+    color: var(--font-clr-lite);
+    margin-bottom: 1rem;
+}
+
+.cta-section {
+    background: var(--bg-med);
+    padding: 1em;
+}
+
+.cta {
+    background: linear-gradient(to right, #61c2e9, #494997);
+    padding: .5em 1em;
+    color: var(--font-clr-lite);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 1em 0;
+    display: inline-block;
+    transition-duration: 0.5s;
+}
+
+.cta:hover {
+    background: #51519b;
+    color: #ccf0ed;
+}
+
+.hero {
+    background: url(/images/mountain-clouds.jpg) no-repeat center / cover, radial-gradient(#444, #777);
+    background-blend-mode: multiply;
+    padding: 1em;
+    height: 50vh;
+    color: var(--font-clr-lite);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.hero h1 {
+    font-size: 2rem;
+}
+
